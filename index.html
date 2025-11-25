@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para o Hian 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loginScreen" class="screen">
+    <h1 class="title">Login do Amor 💗</h1>
+    <div class="loginBox">
+        <input id="username" placeholder="Usuário">
+        <input id="password" type="password" placeholder="Senha">
+
+        <div class="captchaBox">
+            <img src="gatinho.gif" class="captchaCat">
+            <p>Você é humano? 😺</p>
+        </div>
+
+        <button onclick="validateLogin()">Entrar</button>
+    </div>
+</div>
+
+<div id="menuScreen" class="screen hidden">
+    <h2>Escolha uma surpresa 💘</h2>
+    <button onclick="showPage('boloPage')">🎂 Bolo Animado</button>
+    <button onclick="showPage('coracaoPage')">💗 Coração</button>
+</div>
+
+<div id="boloPage" class="screen hidden">
+    <h2>🎂 Bolo Animado</h2>
+    <p>Aqui vai o código animado do bolo depois 🥰</p>
+    <button onclick="returnMenu()">Voltar</button>
+</div>
+
+<div id="coracaoPage" class="screen hidden">
+    <h2>💗 Coração</h2>
+    <p>O código do coração aparecerá aqui 💞</p>
+    <button onclick="returnMenu()">Voltar</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
